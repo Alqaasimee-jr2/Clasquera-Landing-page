@@ -10,6 +10,21 @@ const inter = Inter({
 export const metadata: Metadata = {
   title: "Clasquera - Know what really happens in every class",
   description: "Clasquera records, transcribes, and scores every lesson so you can see teacher performance without leaving your office.",
+  keywords: ["education", "nigeria", "school management", "teacher accountability", "AI education"],
+  authors: [{ name: "NIT7ER" }],
+  openGraph: {
+    title: "Clasquera - Know what really happens in every class",
+    description: "AI-driven accountability for private schools. Powering Nigerian Education through data-driven academic excellence.",
+    url: "https://clasquera.com",
+    siteName: "Clasquera",
+    locale: "en_NG",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Clasquera - Know what really happens in every class",
+    description: "AI-driven accountability for private schools. Powering Nigerian Education through data-driven academic excellence.",
+  },
 };
 
 export default function RootLayout({
