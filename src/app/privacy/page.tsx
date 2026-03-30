@@ -13,41 +13,33 @@ export default function PrivacyPage() {
         <div className="prose prose-slate max-w-none space-y-6 text-slate-600 leading-relaxed">
           <p className="text-lg font-medium text-slate-800">Effective Date: March 30, 2026</p>
           
-          <section className="space-y-4">
-            <h2 className="text-xl font-bold text-foreground">1. Introduction</h2>
-            <p>
-              Clasquera (&quot;we&quot;, &quot;our&quot;, or &quot;us&quot;) is committed to protecting your privacy. This Privacy Policy explains how we collect, use, and share information through our landing page and pilot services.
-            </p>
-          </section>
+          <div className="mt-8 space-y-6">
+            <p>You can view or download the full Clasquera Privacy Policy below:</p>
+            
+            <div className="flex space-x-4 mb-8">
+              <a 
+                href="/privacy-policy.pdf" 
+                target="_blank" 
+                className="inline-flex items-center px-6 py-3 bg-accent text-white font-bold rounded-xl hover:bg-accent/90 transition-all shadow-sm"
+              >
+                View Full PDF
+              </a>
+              <a 
+                href="/privacy-policy.pdf" 
+                download 
+                className="inline-flex items-center px-6 py-3 border border-border text-slate-600 font-bold rounded-xl hover:bg-slate-50 transition-all"
+              >
+                Download PDF
+              </a>
+            </div>
 
-          <section className="space-y-4">
-            <h2 className="text-xl font-bold text-foreground">2. Data We Collect</h2>
-            <p>
-              When you use our lead capture form, we collect the following:
-            </p>
-            <ul className="list-disc pl-5 space-y-2">
-              <li>Full Name</li>
-              <li>School Name</li>
-              <li>Email or WhatsApp Number</li>
-              <li>Professional Role within the school</li>
-            </ul>
-          </section>
-
-          <section className="space-y-4">
-            <h2 className="text-xl font-bold text-foreground">3. How We Use Data</h2>
-            <p>
-              We only use your data to:
-            </p>
-            <ul className="list-disc pl-5 space-y-2">
-              <li>Communicating with you regarding the pilot program.</li>
-              <li>Setting up your school for a demonstration.</li>
-            </ul>
-          </section>
-          
-          <div className="mt-12 p-6 bg-accent/5 rounded-2xl border border-accent/10">
-            <p className="text-sm italic">
-              [Note: This is a placeholder policy. Please replace with your official legal documentation before going live.]
-            </p>
+            <div className="border border-border rounded-2xl overflow-hidden bg-slate-100 h-[600px] w-full relative">
+               <iframe 
+                src="/privacy-policy.pdf" 
+                className="w-full h-full border-none"
+                title="Clasquera Privacy Policy PDF"
+               />
+            </div>
           </div>
         </div>
       </div>

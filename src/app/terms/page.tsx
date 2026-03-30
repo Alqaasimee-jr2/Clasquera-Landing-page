@@ -13,31 +13,33 @@ export default function TermsPage() {
         <div className="prose prose-slate max-w-none space-y-6 text-slate-600 leading-relaxed">
           <p className="text-lg font-medium text-slate-800">Last Updated: March 30, 2026</p>
           
-          <section className="space-y-4">
-            <h2 className="text-xl font-bold text-foreground">1. Acceptance of Terms</h2>
-            <p>
-              By accessing the Clasquera landing page or participating in our pilot program, you agree to be bound by these Terms of Service.
-            </p>
-          </section>
+          <div className="mt-8 space-y-6">
+            <p>You can view or download the full Clasquera Terms of Service below:</p>
+            
+            <div className="flex space-x-4 mb-8">
+              <a 
+                href="/terms-of-service.pdf" 
+                target="_blank" 
+                className="inline-flex items-center px-6 py-3 bg-accent text-white font-bold rounded-xl hover:bg-accent/90 transition-all shadow-sm"
+              >
+                View Full PDF
+              </a>
+              <a 
+                href="/terms-of-service.pdf" 
+                download 
+                className="inline-flex items-center px-6 py-3 border border-border text-slate-600 font-bold rounded-xl hover:bg-slate-50 transition-all"
+              >
+                Download PDF
+              </a>
+            </div>
 
-          <section className="space-y-4">
-            <h2 className="text-xl font-bold text-foreground">2. Pilot Program Participation</h2>
-            <p>
-              The pilot program is provided &quot;as-is&quot;. Clasquera reserves the right to modify or discontinue pilot services during the development phase.
-            </p>
-          </section>
-
-          <section className="space-y-4">
-            <h2 className="text-xl font-bold text-foreground">3. User Responsibilities</h2>
-            <p>
-              Users are responsible for ensuring the accuracy of the school data provided during the registration and pilot phase.
-            </p>
-          </section>
-
-          <div className="mt-12 p-6 bg-accent/5 rounded-2xl border border-accent/10">
-            <p className="text-sm italic">
-              [Note: This is a placeholder terms document. Please replace with your official legal documentation.]
-            </p>
+            <div className="border border-border rounded-2xl overflow-hidden bg-slate-100 h-[600px] w-full relative">
+               <iframe 
+                src="/terms-of-service.pdf" 
+                className="w-full h-full border-none"
+                title="Clasquera Terms of Service PDF"
+               />
+            </div>
           </div>
         </div>
       </div>
